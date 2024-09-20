@@ -3,7 +3,7 @@
 
 **Pitch Desk** - https://www.canva.com/design/DAGROIYa62w/GA4Q-5vdEh4UoTTLqqz14g/edit?utm_content=DAGROIYa62w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-# Table of Contents - Medical-Diagnosis-Extraction
+## Table of Contents 
 1. [Introduction](#1-introduction)
 2. [System Design](#2-system-design) 
 3. [Workflow](#3-workflow) 
