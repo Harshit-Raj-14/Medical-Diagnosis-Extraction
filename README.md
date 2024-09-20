@@ -27,3 +27,20 @@
 - FastApi
 
 
+# Key Features
+### **High Accuracy with OCR Extraction**
+* Leverages advanced Computer Vision techniques like OCR and pytesseract extraction.
+* Focuses on relevant sections of handwritten medical forms.
+* Ensures precise data capture.
+
+### **Regex for Comprehensive Data Extraction**
+* Uses advanced Regex patterns.
+* Extracts detailed medical information like patient details, symptoms, prescriptions, and more.
+* Enhances the depth of insights from documents.
+
+### **Error Correction for Improved Reliability**
+* Integrates an error correction mechanism.
+* Uses a medical vocabulary model to predict and correct handwritten text errors.
+* Ensures higher accuracy in critical data fields like medicine names.
+* Uses RAG model to get the right output from the extracted text.
+
