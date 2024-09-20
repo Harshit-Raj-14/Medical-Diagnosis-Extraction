@@ -5,31 +5,13 @@
 
 # Table of Contents - Medical-Diagnosis-Extraction
 1. [Introduction](#1-introduction)
-   - Overview of the project.
-   - Libraries used (Pytesseract, Computer Vision, Regex, PDF2Image, Pytest).
-   - Process flow for extracting medical data from documents.
-   
-2. [System Design](#2-system-design)
-   - Diagram showcasing the architecture and design of the system.
-   
-3. [Workflow](#3-workflow)
-   - Detailed flow of data through the system.
-   
+2. [System Design](#2-system-design) 
+3. [Workflow](#3-workflow) 
 4. [Technologies Used](#4-technologies-used)
-
 5. [Key Features](#5-key-features)
-   - High Accuracy with OCR Extraction
-   - Regex for Comprehensive Data Extraction
-   - Error Correction for Improved Reliability
-
-6. [Image Processing](#6-image-processing)
-   - Adaptive thresholding vs. normal thresholding.
-   
-7. [After Preprocessing: Image Data Extraction](#7-after-preprocessing-the-image-data-extraction)
-   - Example of data extraction from medical forms.
-   
-8. [Notebook](#8-notebook)
-   - Link to Jupyter Notebooks for code trials and functionalities.
+6. [Image Processing](#6-image-processing) 
+7. [After Preprocessing: Image Data Extraction](#7-after-preprocessing-the-image-data-extraction) 
+8. [Notebook](#8-notebook) 
 
 ## 1. Introduction :
 - This project is to implement medical data extraction, and this project will auto classify and extract useful information from medical forms and documents.
