@@ -1,7 +1,35 @@
 # Medical-Diagnosis-Extraction
-**Team : Kartavya**
+## Team : Kartavya
 
 **Pitch Desk** - https://www.canva.com/design/DAGROIYa62w/GA4Q-5vdEh4UoTTLqqz14g/edit?utm_content=DAGROIYa62w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+# Table of Contents - Medical-Diagnosis-Extraction
+1. [Introduction](#1-introduction)
+   - Overview of the project.
+   - Libraries used (Pytesseract, Computer Vision, Regex, PDF2Image, Pytest).
+   - Process flow for extracting medical data from documents.
+   
+2. [System Design](#2-system-design)
+   - Diagram showcasing the architecture and design of the system.
+   
+3. [Workflow](#3-workflow)
+   - Detailed flow of data through the system.
+   
+4. [Technologies Used](#4-technologies-used)
+
+5. [Key Features](#5-key-features)
+   - High Accuracy with OCR Extraction
+   - Regex for Comprehensive Data Extraction
+   - Error Correction for Improved Reliability
+
+6. [Image Processing](#6-image-processing)
+   - Adaptive thresholding vs. normal thresholding.
+   
+7. [After Preprocessing: Image Data Extraction](#7-after-preprocessing-the-image-data-extraction)
+   - Example of data extraction from medical forms.
+   
+8. [Notebook](#8-notebook)
+   - Link to Jupyter Notebooks for code trials and functionalities.
 
 ## 1. Introduction :
 - This project is to implement medical data extraction, and this project will auto classify and extract useful information from medical forms and documents.
@@ -9,13 +37,13 @@
 - At first we use PDF2Image library to convert PDF into image, clean the image with Computer Vision by Adaptive Thresholding Techinique and extract useful data by using Pytesseract(OCR) and regex.
 - This project works well on medicalcare documents(like extracting name, patient details, medicine, diagonosis) and this saves time as it reduces human work and saves time from 10 min to less than a second.
 
-## System Design
+## 2. System Design
 ![system design](https://github.com/user-attachments/assets/bef32bb2-a86a-4df9-981c-24e2155403d0)
 
-## Workflow
+## 3. Workflow
 ![data flow](https://github.com/user-attachments/assets/b3771cd0-de0a-4660-b7db-1668dfad7fb3)
 
-## Technologies used
+## 4. Technologies used
 - Python
 - Pdf2image module
 - Opencv
@@ -27,7 +55,7 @@
 - FastApi
 
 
-# Key Features
+# 5. Key Features
 ### **High Accuracy with OCR Extraction**
 * Leverages advanced Computer Vision techniques like OCR and pytesseract extraction.
 * Focuses on relevant sections of handwritten medical forms.
@@ -44,3 +72,44 @@
 * Ensures higher accuracy in critical data fields like medicine names.
 * Uses RAG model to get the right output from the extracted text.
 
+
+## 6. Image processing
+![1](https://github.com/user-attachments/assets/6aabfb1b-4df2-4293-8728-50780478b725)
+
+We initially chose to preprocess the images using OpenCV, starting with normal thresholding. However, this method can cause areas with shadows or noise to fade out, leading to data loss.
+
+To improve our approach, we decided to switch to adaptive thresholding. This technique divides the image into smaller regions, applying different threshold values to each. As a result, adaptive thresholding produces significantly better outcomes compared to normal thresholding.
+
+![image](https://github.com/user-attachments/assets/d32ff5e8-2c93-4d6a-be40-a7dc1d2768f0)
+
+
+
+## 7. After preprocessing the image data extraction
+
+C. Nature of Illness / Disease with presenting complaint: CHRONIC IVER DISEASE; PEDAL EDEMA ORAMPS f
+D. Relevant Critical Findings: JAUNDICE, PEDAL EDEME
+E. Duration of the present ailment: 1 year Days
+i. Date of First consultation: 8/1/24.
+(DD/MM/YYYY)
+H. Past history of present allment, if any Detected as CAD & yeast ago elsewhere.
+Provisional diagnosis: DECOMPENSATED CHRONIC IVER DIRGALE.
+1. ICD 10 code
+F.
+G. Proposed line of treatment:
+1. Medical Management
+ii. Surgical Management
+ii. Intensive care
+iv. Investigation
+()
+V. Non-allopathic treatment ()
+H. If Investigation and/or Medical Managernent, provide details
+1. Route of Drug Administration:
+If surgical, narne of surgery TRANSPLANTATION.
+i. ICD 10 PCS code
+J. If other treatment, provide details
+K. How did injury occur
+      
+## 8. Notebook
+For all these above trials, used jupyter books and developed the small bits of the functionalities., which can be used later while designing the class.
+
+[Notebooks](https://github.com/Harshit-Raj-14/Medical-Diagnosis-Extraction/blob/main/Notebooks/OCR%20Notebook.ipynb)
